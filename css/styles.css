@@ -156,6 +156,13 @@ body {
 /*---------------------------HERO----------------------*/
 .hero{    
     background-color: var(--dbgcolorblack);
+    
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Img.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover, cover;
+
+    max-width: 1600px;
 
     display: block;
     padding-top: 200px;
