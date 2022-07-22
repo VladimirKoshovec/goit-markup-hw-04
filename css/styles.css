@@ -156,7 +156,7 @@ body {
     align-items: center;
 }
 
-.link:hover{
+.link:hover, .link:focus{
     color: var(--brandblue);  
 }
 
@@ -166,7 +166,7 @@ body {
 
 /*---------------------------HERO----------------------*/
 .hero{    
-    background-color: var(--dbgcolorblack);
+    background-color: #C4C4C4;
     
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
     background-repeat: no-repeat, no-repeat;
@@ -285,7 +285,6 @@ body {
 .principles-deskrp{
     font-size: 14px;
 
-    /*была ощибка в ДЗ 2 по "line-height: 2" */
     line-height: 1.714;
     letter-spacing: 0.03em;
 
@@ -403,7 +402,13 @@ body {
     align-items: center;
 }
 
-.social-link:hover{
+.social-icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.social-link:hover, .social-link:focus{
     background-color: var(--brandblue);
     color: var(--brandwhite);
 }
@@ -412,11 +417,6 @@ body {
     margin-right: 10px;
 }
 
-.social-icon{
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-}
 /*------------------------/team------------------------------------*/
 /*------------------------clients------------------------------------*/
 .clients-list{
@@ -449,7 +449,7 @@ body {
     fill: currentColor; 
 }
 
-.client-nav:hover {
+.client-nav:hover, .client-nav:focus{
     color: var(--brandblue);
     border-color: var(--brandblue);
 }
@@ -540,7 +540,8 @@ body {
 
 }
 
-.portfolio-items:hover{
+.portfolio-items:hover, 
+.portfolio-items:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
