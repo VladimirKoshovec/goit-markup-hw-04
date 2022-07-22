@@ -60,9 +60,6 @@ body {
     font-family: Roboto, sans-serif;
     color: var(--brandgray);
     font-weight: 400;
-
-    /*max-width: 1600px;*/
-    
 }
 
 /*---------------------------HEADER----------------------*/
@@ -145,29 +142,23 @@ body {
 }
 
 .email{
-    fill: var(--brandgray);
+    fill: currentColor;
     margin-right: 10px;
 }
-
 
 .phone{
-    fill: var(--brandgray);
+    fill: currentColor;
     margin-right: 10px;
 }
-
 
 .link{
     display: flex;
     align-items: center;
 }
 
-.nav-item:hover .link,
-.nav-item:hover .phone,
-.nav-item:hover .email{
+.link:hover{
     color: var(--brandblue);  
-    fill: var(--brandblue);
 }
-
 
 /*---------------------------/HEADER----------------------*/
 
@@ -406,13 +397,15 @@ body {
     border-radius: 50%;
     background-color: inherit;
        
+    color: var(--iconfill);
+    
     justify-content: center;
     align-items: center;
 }
 
-.social-link:hover, .social-link:hover .social-icon{
+.social-link:hover{
     background-color: var(--brandblue);
-    fill: var(--brandwhite);
+    color: var(--brandwhite);
 }
 
 .sociallinks-item:not(:last-child){
@@ -422,7 +415,7 @@ body {
 .social-icon{
     width: 20px;
     height: 20px;
-    fill: var(--iconfill);
+    fill: currentColor;
 }
 /*------------------------/team------------------------------------*/
 /*------------------------clients------------------------------------*/
@@ -430,6 +423,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin: 0px;
     padding: 0px;
 }
@@ -443,19 +437,20 @@ body {
     width: 170px;
     height: 92px;
     border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-
+    
+    color: var(--iconfill);
     border: 1px solid var(--iconfill);
 
+    justify-content: center;
+    align-items: center;
 }
 
 .client-icon{
-    fill: var(--iconfill); 
+    fill: currentColor; 
 }
 
-.client-nav:hover, .client-nav:hover .client-icon{
-    fill: var(--brandblue);
+.client-nav:hover {
+    color: var(--brandblue);
     border-color: var(--brandblue);
 }
 
